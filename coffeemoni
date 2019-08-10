@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int X,P,t,m;
+    t=X;
+    m=X;
+    scanf("%d %d",&X,&P);
+    while(m>0)
+    {
+        m=X-(P/100)*X;
+        t=t+m;
+        X=m;
+    }
+    printf("%d",t);
+}
